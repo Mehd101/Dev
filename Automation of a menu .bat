@@ -33,13 +33,9 @@ echo Veuillez patienter...
 @echo off
 timeout /t 5>NUL 
 rem Ouvertures des PROGRAMMES.
-start "" "C:\Users\Wh7Rse\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord"
-start "" "C:\Users\Wh7Rse\Documents\Formation\.TSSR - Simplon\DB_CT\db1_ct.ctx"
-start "" "C:\Users\Wh7Rse\Documents\Formation\THM\DB_CT\DB_CT.ctx"
 start "" "C:\Program Files\Oracle\VirtualBox\VirtualBox.exe"
 start "" "C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe"
 start "" "C:\Program Files\Cisco Packet Tracer 8.2.1\bin\PacketTracer.exe"
-start "" "C:\Users\Wh7Rse\AppData\Roaming\Zoom\bin\Zoom.exe"
 start "" "C:\Program Files (x86)\Skillbrains\lightshot\5.5.0.7\Lightshot.exe"
 rem Ouvertures des PAGES WEB
 start "" "https://drive.google.com/drive/my-drive"
@@ -48,7 +44,7 @@ start "" "https://www.linkedin.com/"
 rem Chargement des VMS
 ::cd "C:\Program Files\Oracle\VirtualBox" 
 ::VBoxManage startvm "Debian11" --type headless
-start "" "C:\Users\Wh7Rse\VirtualBox VMs\Debian 11 - GNOME\Debian 11 - GNOME.vbox"
+start "" "C:\Users\administrateur\VirtualBox VMs\Debian 11 - GNOME\Debian 11 - GNOME.vbox"
 cls
 goto debut
 :menu2
@@ -65,14 +61,14 @@ taskkill /IM DB_dev.ctx
 taskkill /IM db_net.ctx
 taskkill /IM notepad++.exe
 cls
-echo Les processus ont bien ‚t‚ tu‚s [V]
+echo Les processus ont bien été tu es [V]
 timeout /t 10> NUL 
 cls 
 goto debut
 :menu3
 cls
 @echo off
-echo Votre machine est en pr‚paration de mise en veille...
+echo Votre machine est en préparation de mise en veille...
 timeout /t 10> NUL
 shutdown /h
 cls
